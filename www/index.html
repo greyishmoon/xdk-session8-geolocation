@@ -28,18 +28,41 @@
 
 <body>
 
-<div data-role="page" id="pageone">
-    <div data-role="header">
-        <h1>Header Text</h1>
+<div data-role="page" id="page1">
+    <div data-role="header" id="header1">
+        <h1>Location</h1>
     </div>
 
     
     <div data-role="main" class="ui-content">
-  
-		<button id="exampleButton">Example button</button>
         
-        <p>Example text: <span id="exampleText" >replace me!</span></p>
-        <p id="exampleAppend" >Example append:</p>
+        <button id="getLocationButton">Get Location</button>
+        
+      	<label for="longtext">Longitude:</label>
+      	<input type="text" name="longtext" id="longtext" value=""  />
+        
+      	<label for="lattext">Latitude:</label>
+      	<input type="text" name="lattext" id="lattext" value=""  />
+
+        <label for="time">Time (formatted toTimeString):</label>
+      	<input type="text" name="time" id="time" value=""  />
+  
+        <!--EXTRAS-->
+        
+        <label for="acctext">Accuracy:</label>
+      	<input type="text" name="acctext" id="acctext" value=""  />
+        
+        <label for="alttext">Altitude:</label>
+      	<input type="text" name="alttext" id="alttext" value=""  />
+        
+        <label for="altacctext">Altitude accuracy:</label>
+      	<input type="text" name="altacctext" id="altacctext" value=""  />
+        
+        <label for="headtext">Heading:</label>
+      	<input type="text" name="headtext" id="headtext" value=""  />
+        
+        <label for="speedtext">Speed:</label>
+      	<input type="text" name="speedtext" id="headtespeedtextxt" value=""  />
  
     </div>
   
@@ -48,6 +71,65 @@
         <h1>Footer Text</h1>
     </div>  
 </div> 
+    
+// PAGE 2 - COMPASS /////////////////////////////////////////////  
+    
+<div data-role="page" id="page2">
+    <div data-role="header" id="header2">
+        <h1>Compass</h1>
+    </div>
 
+    
+    <div data-role="main" class="ui-content">
+        <form>
+            <label for="flip-loc"><b>Turn On/Off location monitoring:</b></label>
+            <input data-role="flipswitch" name="flip-loc" id="flip-loc" type="checkbox" >
+            
+        </form>
+        
+        <label for="clongtext">Longitude:</label>
+      	<input type="text" name="clongtext" id="clongtext" value=""  />
+        
+      	<label for="clattext">Latitude:</label>
+      	<input type="text" name="clattext" id="clattext" value=""  />
+
+        <label for="ctime">Time (formatted toTimeString):</label>
+      	<input type="text" name="ctime" id="ctime" value=""  />
+        
+        <p>Watch ID = <span id="runningText"></span></p>
+
+ 
+    </div>
+  
+
+    <div data-role="footer" data-position="fixed">
+        <h1>Footer Text</h1>
+    </div>  
+</div> 
+
+// PAGE 3 - MAP ///////////////////////////////////////////// 
+    
+<div data-role="page" id="page3">
+    <div data-role="header" id="header3">
+        <h1>Map</h1>
+    </div>
+
+    
+    <div data-role="main" class="ui-content">
+        
+        
+ 
+    </div>
+  
+
+    <div data-role="footer" data-position="fixed">
+        <h1>Footer Text</h1>
+    </div>  
+</div> 
+    
+    
+    
+    
+    
 </body>
 </html>
